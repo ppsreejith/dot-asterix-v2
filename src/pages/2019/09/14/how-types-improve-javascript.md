@@ -1,7 +1,7 @@
 ---
 title: How a Type System Improves your JavaScript Code
-date: 2019-10-27T22:40:32.169Z
-path: how-types-improve-javascript
+date: 2019-09-14T12:40:32.169Z
+path: 2019/09/14/how-types-improve-javascript
 ---
 
 Vanilla JavaScript is untyped by nature, some will call it “smart” because it is able to figure out what is a number or a string.
