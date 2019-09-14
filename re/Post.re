@@ -6,9 +6,9 @@ module Styles = {
   let link =
     style([
       textDecoration(`none),
-      hover([textDecoration(`underline), textDecorationColor(red)]),
+      hover([textDecoration(`underline), textDecorationColor(black)]),
     ]);
-  let h2 = style([color(red)]);
+  let h2 = style([color(black)]);
   let p = style([color(black)]);
   let date = style([color(darkgray)]);
 };

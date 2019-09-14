@@ -21,7 +21,7 @@ var link = Css.style(/* :: */[
         Css.hover(/* :: */[
               Css.textDecoration(/* underline */131142924),
               /* :: */[
-                Css.textDecorationColor(Css.red),
+                Css.textDecorationColor(Css.black),
                 /* [] */0
               ]
             ]),
@@ -30,7 +30,7 @@ var link = Css.style(/* :: */[
     ]);
 
 var h2 = Css.style(/* :: */[
-      Css.color(Css.red),
+      Css.color(Css.black),
       /* [] */0
     ]);
 
