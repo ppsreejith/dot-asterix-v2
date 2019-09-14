@@ -57,7 +57,7 @@ function Post(Props) {
   return React.createElement("article", {
               className: article
             }, React.createElement(Gatsby.Link, {
-                  to: "/blog/" + post.frontmatter.path,
+                  to: post.frontmatter.path,
                   className: link,
                   children: React.createElement("h2", {
                         className: h2

@@ -6,7 +6,7 @@ var React = require("react");
 var Gatsby = require("gatsby");
 
 var header = Css.style(/* :: */[
-      Css.backgroundColor(Css.hex("db4d3f")),
+      Css.backgroundColor(Css.hex("white")),
       /* :: */[
         Css.marginBottom(Css.px(16)),
         /* [] */0
@@ -39,7 +39,7 @@ var h1 = Css.style(/* :: */[
     ]);
 
 var link = Css.style(/* :: */[
-      Css.color(Css.white),
+      Css.color(Css.black),
       /* :: */[
         Css.textDecoration(Css.none),
         /* [] */0
@@ -70,11 +70,10 @@ function Header(Props) {
                           children: siteTitle
                         })), React.createElement("nav", {
                       className: nav
-                    }, React.createElement(Gatsby.Link, {
-                          to: "/blog",
+                    }, React.createElement("a", {
                           className: link,
-                          children: "Blog"
-                        }))));
+                          href: "https://github.com/ppsreejith"
+                        }, "Github"))));
 }
 
 var make = Header;

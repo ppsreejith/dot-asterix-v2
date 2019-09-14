@@ -17,7 +17,7 @@ function Blog(Props) {
                       key: post.id
                     });
         }), posts);
-  return React.createElement("div", undefined, React.createElement("h1", undefined, "Blog"), renderPosts);
+  return React.createElement("div", undefined, renderPosts);
 }
 
 var make = Blog;

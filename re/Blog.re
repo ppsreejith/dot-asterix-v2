@@ -14,17 +14,8 @@ type post = {
 [@react.component]
 let make = (~posts) => {
   let renderPosts =
-    posts
-    |> Array.map(post =>
-         <Post
-           key={
-             post##id;
-           }
-           post
-         />
-       )
-    |> React.array;
-  <div> <h1> {"Blog" |> str} </h1> renderPosts </div>;
+    posts |> Array.map(post => <Post key=post##id post />) |> React.array;
+  <div> renderPosts </div>;
 };
 
 let default = make;

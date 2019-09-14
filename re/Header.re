@@ -1,7 +1,7 @@
 module Styles = {
   open Css;
   let header =
-    style([backgroundColor(hex("db4d3f")), marginBottom(px(16))]);
+    style([backgroundColor(hex("white")), marginBottom(px(16))]);
   let content =
     style([
       display(`flex),
@@ -12,12 +12,12 @@ module Styles = {
       padding2(~v=px(16), ~h=px(24)),
     ]);
   let h1 = style([margin(px(0))]);
-  let link = style([color(white), textDecoration(none)]);
+  let link = style([color(black), textDecoration(none)]);
   let nav = style([]);
 };
 
 [@react.component]
-let make = (~siteTitle) => {
+let make = (~siteTitle) =>
   <header className=Styles.header>
     <div className=Styles.content>
       <h1 className=Styles.h1>
@@ -26,12 +26,11 @@ let make = (~siteTitle) => {
         </Gatsby.Link>
       </h1>
       <nav className=Styles.nav>
-        <Gatsby.Link _to="/blog" className=Styles.link>
-          {"Blog" |> ReasonReact.string}
-        </Gatsby.Link>
+        <a href="https://github.com/ppsreejith" className=Styles.link>
+          {"Github" |> ReasonReact.string}
+        </a>
       </nav>
     </div>
   </header>;
-};
 
 let default = make;

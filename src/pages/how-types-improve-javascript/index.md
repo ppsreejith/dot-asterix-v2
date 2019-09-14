@@ -1,6 +1,6 @@
 ---
 title: How a Type System Improves your JavaScript Code
-date: 2018-10-27T22:40:32.169Z
+date: 2019-10-27T22:40:32.169Z
 path: how-types-improve-javascript
 ---
 

@@ -14,10 +14,9 @@ module Styles = {
 };
 
 [@react.component]
-let make = (~post) => {
+let make = (~post) =>
   <article className=Styles.article>
-    <Gatsby.Link
-      _to={"/blog/" ++ post##frontmatter##path} className=Styles.link>
+    <Gatsby.Link _to=post##frontmatter##path className=Styles.link>
       <h2 className=Styles.h2> {post##frontmatter##title |> str} </h2>
     </Gatsby.Link>
     <p className=Styles.p> {post##excerpt} </p>
@@ -25,4 +24,3 @@ let make = (~post) => {
       {post##frontmatter##date |> Utils.formatDate |> str}
     </small>
   </article>;
-};
