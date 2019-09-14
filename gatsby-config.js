@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Dot Asterix',
+        title: 'Dot Asterix v2',
         author: 'Sreejith Puthanpurayil',
     },
     plugins: [
